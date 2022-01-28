@@ -10,10 +10,7 @@ namespace RockPaperScissors
     {
         static void Main(string[] args)
         {
-            //kullanıcıdan rock için r, paper için p, scissors için s tuşlamasını isteyin. r için R ya da rock olma durumunda da r kabul ediniz. exit için e ya da E/exit tuşlasın.
-            //kullanıcı çıkış tuşuna basmadığı sürece giriş yaptığı ve bilgisayarında rasgele bir seçim yaparak her tur için kim kazanırsa onun puanını artırın. (playerScore, computerScore)
-            //her tur sonunda kimin kazanadığını ya da berabere olma durumunu bilgilendiriniz ve aynı zamanda scorelarıda ekrana yazdırınız.
-            //kullanıcı çıkış tuşuna bastığında console'u kapatınız.
+          
 
             int playerScore = 0;
             int computerScore = 0;
@@ -64,7 +61,7 @@ namespace RockPaperScissors
                         break;
                 }
                 Console.WriteLine($"computer choose {computerMove}");
-                if ((computerMove=="paper"&&playerMove=="rock")||(computerMove=="scissors"&&playerMove=="paper")||(computerMove=="rock"&& playerMove=="scissors")) //bilgisayarın kazandığı durumlar
+                if ((computerMove=="paper"&&playerMove=="rock")||(computerMove=="scissors"&&playerMove=="paper")||(computerMove=="rock"&& playerMove=="scissors")) 
                 {
                     computerScore++;
                     Console.WriteLine("You lose. Computer wins!");
